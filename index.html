@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dental Instruments & Equipment | MediTek Supplies</title>
+<meta name="description" content="Explore dental instruments, dental implant kits, surgical instruments and professional dental equipment at MediTek Supplies.">
+
+<style>
+:root {
+  --primary: #087f8c;
+  --dark: #075963;
+  --light: #eff7f8;
+  --text: #26383d;
+  --muted: #64777c;
+  --border: #dce9eb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  background: var(--white);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -.7px;
+}
+
+.logo span {
+  color: var(--text);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.menu a {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #e7f5f6, #f8fbfb);
+  padding: 75px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .6fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  background: #d5edef;
+  color: var(--dark);
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.13;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 650px;
+  margin-bottom: 27px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 13px 22px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: var(--dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hero-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 35px #173f4510;
+}
+
+.hero-box .symbol {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: var(--light);
+  border-radius: 13px;
+  color: var(--primary);
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.hero-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hero-box p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Intro */
+.intro {
+  padding: 65px 0 35px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: clamp(27px, 3.5vw, 38px);
+  line-height: 1.25;
+  margin-bottom: 18px;
+  letter-spacing: -.7px;
+}
+
+.intro p {
+  color: var(--muted);
+  max-width: 900px;
+  margin-bottom: 14px;
+}
+
+/* Categories */
+.categories {
+  padding: 35px 0 75px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 21px;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  min-height: 235px;
+  transition: transform .25s ease,
+              box-shadow .25s ease,
+              border-color .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #8dcbd0;
+  box-shadow: 0 14px 35px #193e4412;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: var(--light);
+  border-radius: 12px;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.card-link {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Keyword content */
+.resources {
+  background: var(--light);
+  padding: 65px 0;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.resource-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.resource-box h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.resource-box p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.keyword-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  list-style: none;
+}
+
+.keyword-list a {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.keyword-list a:hover {
+  background: var(--light);
+  border-color: var(--primary);
+}
+
+/* CTA */
+.cta {
+  padding: 65px 0;
+}
+
+.cta-inner {
+  background: var(--dark);
+  color: white;
+  border-radius: 17px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.cta h2 {
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  color: #e0f1f2;
+  max-width: 680px;
+}
+
+.cta .btn {
+  background: white;
+  color: var(--dark);
+  flex-shrink: 0;
+}
+
+/* Footer */
+footer {
+  background: #edf5f6;
+  border-top: 1px solid var(--border);
+  padding: 25px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu {
+    gap: 10px 15px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .cta-inner {
+    padding: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="https://mediteksuppliesinc.com/">
+      MediTek <span>Supplies</span>
+    </a>
+
+    <nav class="menu" aria-label="Main navigation">
+      <a href="https://mediteksuppliesinc.com/">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="tag">Professional Instrument Catalog</span>
+
+      <h1>Dental Instruments &amp; Equipment for Professionals</h1>
+
+      <p>
+        Explore dental instruments, implant kits, surgical tools
+        and specialty instrument categories through MediTek Supplies.
+        Browse relevant collections and review available product details.
+      </p>
+
+      <a class="btn" href="#categories">Explore Categories &rarr;</a>
+    </div>
+
+    <div class="hero-box">
+      <div class="symbol" aria-hidden="true">&#10010;</div>
+      <h2>Explore the Catalog</h2>
+      <p>
+        Find relevant dental instrument categories through a
+        clean, organized and easy-to-navigate catalog layout.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <div class="eyebrow">Welcome to MediTek Supplies</div>
+
+    <h2 class="section-title">
+      Explore Dental Instruments and Specialty Equipment
+    </h2>
+
+    <p>
+      Dental professionals use different instruments for restorative
+      dentistry, oral surgery, hygiene, extraction and implant procedures.
+      Organizing product information by category makes it easier to find
+      relevant instruments.
+    </p>
+
+    <p>
+      Browse
+      <a href="https://mediteksuppliesinc.com/">dental equipment</a>,
+      <a href="https://mediteksuppliesinc.com/">dental instruments</a>,
+      <a href="https://mediteksuppliesinc.com/">dental surgical instruments</a>
+      and other specialty products available in the catalog.
+    </p>
+  </div>
+</section>
+
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="eyebrow">Browse Our Collections</div>
+    <h2 class="section-title">Explore Instrument Categories</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-icon">&#10010;</div>
+        <h3>Dental Implant Kits</h3>
+        <p>Explore implant kits, dental implant supplies and related equipment.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/product-category/dental-implant-kits/">Dental implant kits &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9671;</div>
+        <h3>Dental Elevators</h3>
+        <p>Browse dental elevators and instruments used in extraction workflows.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/product-category/dental-elevators/">Dental elevators &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9672;</div>
+        <h3>Sinus Lift Instruments</h3>
+        <p>Explore instruments associated with sinus lift procedures.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9673;</div>
+        <h3>Osteotomes</h3>
+        <p>Review osteotomes and specialty dental surgical instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#10022;</div>
+        <h3>Dental Implant Instruments</h3>
+        <p>Find implant-related tools and supporting instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#8984;</div>
+        <h3>Scalers &amp; Curettes</h3>
+        <p>Explore scalers and curettes for professional dental hygiene.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9986;</div>
+        <h3>Scissors &amp; Forceps</h3>
+        <p>Browse surgical scissors, dental forceps and related instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9671;</div>
+        <h3>Bone Files &amp; Discoid</h3>
+        <p>Explore dental bone files and discoid instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#10022;</div>
+        <h3>Composite Filling Instruments</h3>
+        <p>Review restorative and composite filling instrument categories.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9678;</div>
+        <h3>PRF &amp; GRF Systems</h3>
+        <p>Explore PRF and GRF instruments and related kits.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9638;</div>
+        <h3>Sterilization Cassettes</h3>
+        <p>Browse dental instrument cassettes for organization and sterilization workflows.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9671;</div>
+        <h3>Luxating Sets</h3>
+        <p>Explore luxating elevators and related extraction instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#10010;</div>
+        <h3>Dental Surgery Kits</h3>
+        <p>Find dental surgery kits and related surgical instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#9678;</div>
+        <h3>Eye Instruments</h3>
+        <p>Explore eye and ophthalmic instrument listings where available.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">&#8984;</div>
+        <h3>Orthodontic Pliers &amp; Tips</h3>
+        <p>Review orthodontic pliers, wire-bending tools and related instruments.</p>
+        <a class="card-link" href="https://mediteksuppliesinc.com/">Browse MediTek catalog &rarr;</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="resources" id="resources">
+  <div class="container resource-grid">
+
+    <div class="resource-box">
+      <div class="eyebrow">Dental Equipment</div>
+      <h3>Find Relevant Instruments</h3>
+
+      <p>
+        Browse the catalog for dental equipment, instruments
+        and specialty product information.
+      </p>
+
+      <ul class="keyword-list">
+        <li><a href="https://mediteksuppliesinc.com/">Dental equipment</a></li>
+        <li><a href="https://mediteksuppliesinc.com/">Dental instruments</a></li>
+        <li><a href="https://mediteksuppliesinc.com/">Dental instrument supplier</a></li>
+        <li><a href="https://mediteksuppliesinc.com/">Dental extraction instruments</a></li>
+      </ul>
+    </div>
+
+    <div class="resource-box">
+      <div class="eyebrow">Product Information</div>
+      <h3>Review Product Details</h3>
+
+      <p>
+        Check individual product listings for specifications,
+        included components, material information and intended use.
+      </p>
+
+      <a class="btn" href="https://mediteksuppliesinc.com/">
+        Visit MediTek Supplies &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Explore MediTek Supplies</h2>
+        <p>
+          Visit the official website to browse available dental
+          instruments, kits and product information.
+        </p>
+      </div>
+
+      <a class="btn" href="https://mediteksuppliesinc.com/">
+        Visit Website &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>&copy; 2026 MediTek Supplies. All rights reserved.</p>
+    <a href="https://mediteksuppliesinc.com/">mediteksuppliesinc.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
